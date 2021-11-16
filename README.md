@@ -1,2 +1,2 @@
 # string-parser
-A simple cli-tool that will count the characters, words, or lines in a string.
+A simple GoLang cli-tool that will count the characters, print words containing substring using given string.
