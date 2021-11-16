@@ -11,7 +11,7 @@ func main() {
 	textPtr := flag.String("text", "", "Text to parse.")
 	metricPtr := flag.String("metric", "chars", "Metric {chars|words|lines};.")
 	uniquePtr := flag.Bool("unique", false, "Measure unique values of a metric.")
-
+	helpPtr := flag.String("help", "", "")
 	flag.Parse()
 
 	if *textPtr == "" {
@@ -20,4 +20,6 @@ func main() {
 	}
 
 	fmt.Printf("textPtr: %s, metricPtr: %s, uniquePtr: %t\n", *textPtr, *metricPtr, *uniquePtr)
+
+	fmt.Printf("Help: %s", *helpPtr)
 }
